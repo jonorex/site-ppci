@@ -51,6 +51,7 @@ document.querySelectorAll('.toggle-button').forEach(button => {
 
 // Obtém todas as seções que possuem a classe 'secoes'
 var secoes = document.querySelectorAll('.secoes-ocultas');
+var secoes_ocultas_a = document.querySelectorAll('.secao-oculta-after');
 
 // Data atual
 var dataAtual = new Date();
@@ -65,5 +66,18 @@ secoes.forEach(function(secao) {
         secao.style.display = "block";  // Exibe a seção
     } else {
         secao.style.display = "none";   // Oculta a seção
+    }
+});
+
+// Itera sobre todas as seções
+secoes_ocultas_a.forEach(function(secao) {
+    // Obtém a data de referência definida no atributo 'data-data-referencia'
+    var dataReferencia = new Date("2024-10-1");
+
+    // Verifica se a data atual é maior ou igual à data de referência
+    if (dataAtual >= dataReferencia) {
+        secao.style.display = "none";  // Exibe a seção
+    } else {
+        secao.style.display = "flex";   // Oculta a seção
     }
 });
