@@ -46,10 +46,6 @@ document.querySelectorAll('.toggle-button').forEach(button => {
 });
 
 
-// Desabilita o clique com o botão direito no documento inteiro
-document.addEventListener('contextmenu', function (event) {
-    event.preventDefault();
-});
 
 
 
