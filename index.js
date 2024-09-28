@@ -50,3 +50,24 @@ document.querySelectorAll('.toggle-button').forEach(button => {
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
 });
+
+
+
+// Obtém todas as seções que possuem a classe 'secoes'
+var secoes = document.querySelectorAll('.secoes-ocultas');
+
+// Data atual
+var dataAtual = new Date();
+
+// Itera sobre todas as seções
+secoes.forEach(function(secao) {
+    // Obtém a data de referência definida no atributo 'data-data-referencia'
+    var dataReferencia = new Date("2024-10-1");
+
+    // Verifica se a data atual é maior ou igual à data de referência
+    if (dataAtual >= dataReferencia) {
+        secao.style.display = "block";  // Exibe a seção
+    } else {
+        secao.style.display = "none";   // Oculta a seção
+    }
+});

@@ -237,6 +237,9 @@ h1 {
     margin: 5px;
     cursor: pointer;
     border-radius:10px ;
+    border: 2px solid #1988ce;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .buttons button:hover {
@@ -532,7 +535,7 @@ code {
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #002144;
+    background-color: #002147;
     flex-direction: column;
     padding: 10px;
     padding-bottom: 50px;
