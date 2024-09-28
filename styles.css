@@ -1,0 +1,653 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    font-style: normal;
+    color:#011c43;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1988ce;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+/* Desabilita a arrastar da imagem */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #002244; /* Azul escuro */
+    padding: 10px 20px;
+}
+
+
+
+
+.navbar .logo img {
+    width: 60px; /* Ajuste o tamanho da logo conforme necessário */
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar .logo h1 {
+    color: #002244;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    
+}
+
+.separator {
+    margin-left: 10px;
+    width: 1px; /* Largura do separador */
+    height: 60px; /* Altura total do container */
+    background-color: #DDD; /* Cor do separador (branco no caso) */
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.navbar .menu li a {
+    color: #002244;;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .menu li a:hover {
+    color: #1988ce;
+}
+
+.h-icon {
+    display: none;
+    color: #002244;
+
+}
+
+.box{
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);;
+    padding: 10px;
+    
+  }
+
+
+/* Esconder o menu em dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10%;
+        background-color: white;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .h-icon {
+        display: block;
+        color: #002244;
+    }
+
+    .h-icon a {
+        color: #002244;
+        font-size: 1.5em;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    /* Mostrar o menu quando o logo for clicado */
+    .navbar.active .menu {
+        display: flex;
+    }
+
+    /* Estilizar o logo para dispositivos móveis */
+    .navbar .logo {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navbar .logo h1 {
+        font-size: 1.5em;
+    }
+
+    
+}
+
+
+/*presentation section*/
+
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.presentation-horizontal {
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    /*background-color: #011c43;*/
+    color: #011c43;
+    justify-content: space-between;
+}
+
+.presentation-img {
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-img img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.presentation-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.presentation-text p {
+    color: black;
+}
+
+.presentation-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: #011c43;
+}
+
+.presentation-text h2 {
+    font-size: 1.5em;
+}
+
+.presentation-text h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.presentation-text .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+
+.buttons button {
+    background-color: #1988ce; /* Azul claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius:10px ;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #002244; /* Azul escuro */
+    border: 2px solid #002244;
+}
+
+@media (max-width: 768px) { 
+    .presentation-horizontal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #presentation-sec2 {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+/*seção vertical*/
+
+.presentation-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    align-items: center;
+    
+}
+
+
+.expandable-section {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.expandable-section h1 {
+    margin: 10px 0px;
+}
+
+.expandable-section .toggle-button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    color: #011c43;
+    
+}
+
+
+.expanded-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation-vertical img {
+    max-width: 428px;
+}
+
+.presentation-vertical .legend-img {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    
+    
+}
+
+.topic-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.topic-section h2, .presentation-vertical h2 {
+    color: #011c43;
+}
+
+.topic-section ul {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+
+}
+
+ul.custom-list {
+    
+    list-style-type: none; /* Remove o estilo padrão dos marcadores */
+    padding-left: 30px; /* Espaçamento da lista */
+}
+
+ul.custom-list li {
+    font-size: 16px; /* Tamanho padrão do texto */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+ul.custom-list li::marker {
+    content: "■ "; /* Define o marcador como um quadrado */
+    font-size: 15px; /* Aumenta o tamanho do marcador */
+    color: #011c43; /* Altera a cor do marcador */
+}
+
+.presentation-vertical .content {
+    display: none; /* Inicialmente escondido */
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+@media (max-width: 768px) { 
+    .presentation-vertical {
+        padding: 15px;
+    }
+}
+
+
+/* Estilo para o bloco de código */
+pre {
+    background-color: #2d2d2d; /* Cor de fundo escura */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    overflow-x: auto; /* Barra de rolagem horizontal */
+    width: 100%; /* Limita a largura ao tamanho da tela */
+    box-sizing: border-box; /* Garante que padding seja incluído na largura total */
+}
+
+code {
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+    font-size: 16px;
+    color: #fff; /* Cor do texto */
+}
+
+
+/* Seção de Cronograma */
+
+.cronograma {
+    font-family: Arial, sans-serif;
+    background-color: #002147;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.cronograma h1 {
+    color: white;
+}
+
+.schedule-container {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.day-column {
+    background-color: #f8a833;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100px;
+    color: white;
+}
+
+.day-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-text-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(270deg);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.events-column {
+    
+    padding-left: 10px;
+    display: grid;
+    
+    gap: 10px;
+}
+
+.event-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.event-time, .event-hour {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #002147;
+    width: 250px; /* Define largura fixa para as caixas */
+    word-wrap: break-word; /* Garante que o texto quebra e não aumente a largura */
+    overflow-wrap: break-word;
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #002144;
+}
+
+/* Define um tamanho máximo para as caixas */
+.event-time {
+    height: auto; /* Altura ajustável conforme o texto */
+}
+
+.event-hour {
+    height: auto; /* Altura ajustável conforme o texto */
+}
+
+@media (max-width: 768px) { 
+    .event-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .schedule-container {
+        display: grid;
+        gap: 10px;
+        flex-direction: column;
+        
+    }
+    .day-column {
+        width: auto;
+    }
+
+    .events-column {
+        padding: 0;
+        display: block;
+        gap: 10px;
+    }
+
+    .event-row {
+        gap:  10px;
+        display: flex;
+    }
+
+    .cronograma {
+        justify-content: space-between;
+        
+    }
+
+    .day-text-vertical {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+/*Podium Section*/
+  
+ .podium-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #002144;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 50px;
+ } 
+
+ .podium-sec h1 {
+    color: white;
+ }
+
+ .podium-sec .container {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .podium__item {
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .podium {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .podium__rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+  }
+  
+  .podium__city {
+    text-align: center;
+    padding: 0 .5rem;
+    font-weight: bold;
+  }
+  
+  .podium__number {
+    width: 27px;
+    height: 75px;
+  }
+  
+  .podium .first {
+    min-height: 300px;
+    background: #f8a833;
+  }
+  
+  .podium .second {
+    min-height: 200px;
+    background: rgb(0, 153, 255);
+  }
+  
+  .podium .third {
+    min-height: 100px;
+    background: rgba(0, 128, 0, 0.678);
+  }
+  
+
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #002144;
+}
+
+footer .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+@media (max-width: 960px) {  
+    footer .logos {
+        
+        grid-template-columns: 1fr;
+        
+        
+    }
+}
+
+footer .logos img {
+    max-width: 300px;
+}
+
+.social-icons {
+    padding-top: 50px;
+}
+
+footer .social-icons a {
+    font-size: 30px;
+    color: #002144;
+    margin: 0 15px;
+}
+
+footer .social-icons a:hover {
+    color: #00BFFF;
+}
+
+footer .social-icons a:nth-child(2):hover {
+    color: #FF0000;
+}
+
+footer .social-icons a:nth-child(3):hover {
+    color: #C13584;
+}

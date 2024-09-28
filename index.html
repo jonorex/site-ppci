@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAlimpíadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imgs/logo-img.png" type="image/png">
+
+    <!-- Incluindo uma biblioteca de ícones (Font Awesome para ícones das redes sociais) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Tema escuro "Atom One Dark" -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+
+
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar box">
+        <div class="logo">
+            <img src="imgs/logo-img.png" alt="Logo do evento">
+            <h1>PPCI IA</h1>
+            <div class="separator"></div>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#presentation-sec">Início</a></li>
+            <li><a href="#cronograma-sec">Cronograma</a></li>
+            <li><a href="#desafio-pong">Desafios</a></li>
+            
+        </ul>
+        <div class="h-icon">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+
+
+    <!-- Seção de Apresentação -->
+    <section id="presentation-sec" class="presentation-horizontal">
+        <div class="presentation-img">
+            <img src="imgs/Leonardo_Phoenix_A_futuristic_hightech_scene_depicting_the_con_2.jpg" alt="Imagem do Evento">
+        </div>
+        <div class="presentation-text">
+            <h1>Bem vindo à IAlimpíadas!</h1>
+            <h2>Projeto Programação Competitiva Integrativa Modalidade IA</h2>
+
+            <p>Nesta modalidade do Projeto Programação Competitiva Integrativa da UTFPR Campus Toledo, equipes devem
+                criar agentes virtuais capazes de resolver problemas em ambientes simulados. Os competidores podem
+                participar de até dois jogos na primeira edição da IAlimpíada. Um jogo é do tipo adversarial enquanto o
+                outro do tipo individual.</p>
+
+            <h3 style="max-width: 600px;">O evento será realizado de forma remota entre os dias 27 de setembro a 19
+                de
+                outubro de 2024</h3>
+            <div class="buttons">
+                <button
+                    onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScOZp68yQUtDvAfl7lu2DRBMHmrzeHBQgFemOpjVVshfMQfKw/viewform', '_blank');">Inscreva-se</button>
+                <button onclick="window.location.href='#cronograma-sec';">Cronograma</button>
+                <button
+                    onclick="window.open('https://drive.google.com/file/d/12zLYfPxg6KdRpi_mf7ZX-P1uKXu-XVTR/view', '_blank');">
+                    Regulamento
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Seção de Apresentação -->
+    <section id="presentation-sec2" class="presentation-horizontal">
+
+        <div class="presentation-text">
+
+            <h2>Como vai funcionar?</h2>
+
+            <p>Os competidores devem implementar a lógica de seus agentes virtuais em Python no módulo bot.py e
+                enviá-lo conforme instruções do edital. Os agentes devem seguir o modelo Pensar-Agir-Observar de
+                acordo com os exemplos apresentados. O agente virtual deve receber em seu construtor o ambiente do
+                jogo e pode extrair livremente informações do ambiente, isto é, pode realizar quaisquer operações
+                de leitura desejadas. É proibido o uso de operações de escrita na memória do ambiente e sua ocorrência
+                irá resultar na desclassificação do competidor. O método de ação do agente deve usar seu modelo interno
+                para gerar uma ação dentro do espaço de ações do ambiente. O método de observação do agente recebe
+                atualizações
+                do ambiente a cada passo de simulação e deve ser utilizada para extrair informações e atualizar o modelo
+                interno.
+            </p>
+
+            <p>
+                Sugere-se o uso de Github ou outra ferramenta similar para hospedar os arquivos do modelo caso
+                sejam de tamanho excessivo para envio por e-mail. Os arquivos para execução do jogo são fornecidos
+                para facilidade dos competidores testarem suas soluções. Não envie scripts de execução alterados.
+                Submeta exclusivamente a sua solução no módulo bot.py e quaisquer arquivos necessários para execução do
+                modelo.
+            </p>
+
+
+            <div class="buttons">
+                <button class="scroll-expand-button" data-target="desafio-pong">DESAFIO PONG</button>
+                <button class="scroll-expand-button" data-target="desafio-qwop">DESAFIO QWOP</button>
+
+            </div>
+        </div>
+
+
+        <div class="presentation-img">
+            <img src="imgs/img-presentation_1.jpg" alt="Imagem do Evento">
+        </div>
+
+    </section>
+
+
+    <!-- Seção de Cronograma -->
+    <section id="cronograma-sec" class="cronograma">
+        <h1>Cronograma</h1>
+        <div class="schedule-container">
+            <div class="day-column">
+                <div class="day-box">
+                    <span class="day-text-vertical">SEXTA</span>
+                    <span class="date">27/09</span>
+                </div>
+            </div>
+            <div class="events-column">
+                <div class="event-row">
+                    <div class="event-time">DIVULGAÇÃO DO REGULAMENTO</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="schedule-container">
+            <div class="day-column">
+                <div class="day-box">
+                    <span class="day-text-vertical">TERÇA</span>
+                    <span class="date">01/10</span>
+                </div>
+            </div>
+            <div class="events-column">
+                <div class="event-row">
+                    <div class="event-time">INÍCIO DO EVENTO</div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="schedule-container">
+            <div class="day-column">
+                <div class="day-box">
+                    <span class="day-text-vertical">SÁBADO</span>
+                    <span class="date">19/10</span>
+                </div>
+            </div>
+            <div class="events-column">
+                <div class="event-row">
+                    <div class="event-time">ENCERRAMENTO DO EVENTO</div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="schedule-container">
+            <div class="day-column">
+                <div class="day-box">
+                    <span class="day-text-vertical">SÁBADO</span>
+                    <span class="date">26/10</span>
+                </div>
+            </div>
+            <div class="events-column">
+                <div class="event-row">
+                    <div class="event-time">DIVULGAÇÃO DOS RESULTADOS</div>
+
+                </div>
+
+                <div class="event-row">
+                    <div class="event-time">CERIMÔNIA DE PREMIAÇÃO</div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="desafio-pong" class="presentation-vertical">
+
+        <div class="expandable-section">
+
+            <div class="expanded-div">
+                <h1>Desafio Pong</h1>
+                <button class="toggle-button">+</button>
+            </div>
+            <div class="content">
+                <p>
+                    O jogo Pong remete à modalidade olímpica de Ping Pong e é um clássico de implementação de jogos.
+                    Dois
+                    jogadores, o jogador à esquerda e o jogador à direita, competem para marcar a maior quantidade de
+                    pontos.
+                </p>
+
+                <img src="imgs/pong.png" alt="Imagem do Evento">
+                <div class="legend-img">
+
+                    <p>Figura 1 - Interface gráfica do jogo Pong.</p>
+
+                </div>
+
+                <div class="topic-section">
+                    <h2>Os arquivos disponibilizados são:</h2>
+                    <ul class="custom-list">
+                        <li> bot.py – exemplo de implementação do agente virtual à esquerda e à direita</li>
+                        <li>envpong.py – ambiente de simulação do jogo Pong</li>
+                        <li>pongPlayGUI.py – script de execução do jogo Pong com gráficos</li>
+                        <li>pongPlayNOGUI.py – script de execução do jogo Pong sem gráficos</li>
+                    </ul>
+
+                </div>
+
+                <p>
+                    Para o jogo Pong o agente virtual é separado em dois, um à esquerda e um à direita, para facilitar a
+                    implementação dos competidores. Os agentes seguem o paradigma Pensar-Agir-Observar para interação
+                    com o
+                    ambiente. Na implementação de exemplo à direita o jogador realiza movimentações aleatórias.
+                </p>
+
+                <h2>Exemplo de Código Python:</h2>
+                <pre><code class="python">
+"Random bot"
+class BotRight:
+    def __init__(self, env):
+        self.env = env
+        
+        "This bot doesn't require an initial observation"
+        self.obs = None
+    
+    def act(self):
+        action = random.choice([PongLogic.PaddleMove.DOWN, PongLogic.PaddleMove.STILL, PongLogic.PaddleMove.UP])  
+        return action
+    
+    def observe(self, obs):
+        self.obs = obs
+</code></pre>
+
+
+                <div class="legend-img">
+
+                    Quadro 1 - Exemplo de bot à direita para o jogo Pong.
+
+                </div>
+
+                <p>Na implementação de exemplo do jogador à esquerda o agente mantém memória da última observação
+                    realizada
+                    e a utiliza para movimentar a raquete de maneira a rastrear a posição vertical da bola.</p>
+
+                <pre><code class="python">
+    <pre><code class="python">
+"Random bot"
+class BotRight:
+    def __init__(self, env):
+        self.env = env
+        
+        "This bot doesn't require an initial observation"
+        self.obs = None
+    
+    def act(self):
+        action = random.choice([PongLogic.PaddleMove.DOWN, PongLogic.PaddleMove.STILL, PongLogic.PaddleMove.UP])  
+        return action
+    
+    def observe(self, obs):
+        self.obs = obs
+        </code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+
+                    Quadro 2 - Exemplo de bot à esquerda para o jogo Pong.
+
+                </div>
+
+                <p>
+                    Os scripts pongPlayGUI e pongPlayNOGUI são disponibilizados para que os competidores possam testar
+                    suas
+                    implementações. Não envie estes scripts alterados pois eles não serão utilizados na competição.
+                    Respeite
+                    a
+                    interface de implementação dos bots conforme o construtor, métodos de ação e observação
+                    apresentados. A
+                    sua
+                    implementação do módulo <strong>bot.py</strong> deve conter o jogador à esquerda e o jogador à
+                    direita
+                    com os nomes
+                    <strong>BotRight</strong> e
+                    <strong>BotLeft</strong> para que os agentes sejam utilizados contra os agentes de outros
+                    competidores.
+                </p>
+
+
+                <pre><code class="python">
+    <pre><code class="python">
+from envpong import PongEnv
+from bot import BotRight, BotLeft
+import os
+        
+def runLoop(env):
+    random_bot = BotRight(env)
+    tracker_bot = BotLeft(env)
+    
+    # simulate for arbitrary 1000 steps (about 33 seconds)
+    for i in range(1000):
+        actionp1 = tracker_bot.act()
+        actionp2 = random_bot.act()
+         
+        obs, reward, done, truncated, info = env.step(actionp1, actionp2)
+        
+        tracker_bot.observe(obs)
+        random_bot.observe(obs)
+
+
+def main():
+    env = PongEnv(debugPrint=True)
+    runLoop(env)
+        </code></pre>
+                </code></pre>
+
+                <div class="legend-img">
+
+                    Quadro 3 - Script de execução sem interface gráfica para o jogo Pong.
+
+                </div>
+
+
+                <pre><code class="python">
+    <pre><code class="python">
+import arcade
+from envpong import PongGUIEnv
+from bot import BotRight, BotLeft
+import os
+import time
+import threading
+        
+def runLoop(env):
+    random_bot = BotRight(env)
+    tracker_bot = BotLeft(env)
+    
+    # simulate for arbitrary 1000 steps (about 33 seconds)
+    for i in range(1000):
+        actionp1 = tracker_bot.act()
+        actionp2 = random_bot.act()
+         
+        obs, reward, done, truncated, info = env.step(actionp1, actionp2)
+        
+        tracker_bot.observe(obs)
+        random_bot.observe(obs)
+        
+        # this should be somewhat synced to arcade's event loop
+        time.sleep(env.game.dt)
+        
+def main():
+    env = PongGUIEnv()
+    
+    # Create separate thread for logic updates
+    threading.Thread(target=runLoop, args=(env,)).start()
+    
+    # Arcade thread for GUI updates
+    arcade.run()
+        </code></pre>
+                </code></pre>
+
+                <div class="legend-img">
+
+                    Quadro 4 - Script de execução com interface gráfica para o jogo Pong.
+
+                </div>
+
+                <p> O ambiente do jogo Pong possui um espaço de ação com três valores discretos (-1, 0, 1), equivalentes
+                    a
+                    movimentar a raquete para baixo, manter a raquete parada, e movimentar a raquete para cima.</p>
+
+
+                <pre><code class="python">
+# there are 3 possible actions: PongLogic.PaddleMove.{DOWN,STILL,UP} (-1, 0, 1)
+self.action_space = Discrete(3, start=-1)
+    </code></pre>
+
+                <div class="legend-img">
+
+                    Quadro 5 - Espaço de ação do jogo Pong.
+
+                </div>
+
+                <p>O ambiente do jogo Pong possui um espaço de observação com 14 valores, sendo 12 valores contínuos,
+                    referentes a posições e velocidades da raquete 1, da raquete 2, e da bola, e 2 valores discretos,
+                    referentes à última ação do jogador 1 e do jogador 2.</p>
+
+
+
+                <pre><code class="python">
+<pre><code class="python">
+# matches getInputs()
+# all positions can be converted to discrete by multiplying by their respective window height/width
+self.observation_space = Tuple((
+    Box(0, 1),             # 0  paddle 1 x position
+    Box(0, 1),             # 1  paddle 1 y position
+    Box(0, 1),             # 2  paddle 1 x velocity
+    Box(0, 1),             # 3  paddle 1 y velocity
+    Box(0, 1),             # 4  paddle 2 x position
+    Box(0, 1),             # 5  paddle 2 y position
+    Box(0, 1),             # 6  paddle 2 x velocity
+    Box(0, 1),             # 7  paddle 2 y velocity
+    Box(0, 1),             # 8  ball x position
+    Box(0, 1),             # 9  ball y position
+    Box(0, 1),             # 10 ball x velocity
+    Box(0, 1),             # 11 ball y velocity
+    Discrete(3, start=-1), # 12 player 1 action
+    Discrete(3, start=-1)  # 13 player 2 action
+))
+</code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+
+                    Quadro 6 - Espaço de observação do jogo Pong.
+
+
+                </div>
+
+                <p> O espaço de observação é obtido pela função getInputs. Esta função realiza a leitura do último
+                    estado do
+                    jogo, converte posições discretas para valores contínuos e combina os valores numa lista.</p>
+
+
+                <pre><code class="python">
+<pre><code class="python">
+
+# Serialize a given state into relevant inputs
+def getInputs(self, state):
+    inputs = []
+    inputs += [state.paddle1Position[0]/self.game.windowWidth]
+    inputs += [state.paddle1Position[1]/self.game.windowHeight]
+    inputs += [state.paddle1Velocity[0]/(self.game.ballVelocityMag*100)]
+    inputs += [state.paddle1Velocity[1]/(self.game.ballVelocityMag*100)]
+    inputs += [state.paddle2Position[0]/self.game.windowWidth]
+    inputs += [state.paddle2Position[1]/self.game.windowHeight]
+    inputs += [state.paddle2Velocity[0]/(self.game.ballVelocityMag*100)]
+    inputs += [state.paddle2Velocity[1]/(self.game.ballVelocityMag*100)]
+    inputs += [state.ballPosition[0]/self.game.windowWidth]
+    inputs += [state.ballPosition[1]/self.game.windowHeight]
+    inputs += [state.ballVelocity[0]/(self.game.ballVelocityMag*100)]
+    inputs += [state.ballVelocity[1]/(self.game.ballVelocityMag*100)]
+    inputs += [state.player1action]
+    inputs += [state.player2action]
+
+return inputs
+
+
+</code></pre>
+                </code></pre>
+
+
+
+
+
+
+
+                <div class="legend-img">
+                    Quadro 7 - Detalhe de implementação do espaço de observação do jogo Pong.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="desafio-qwop" class="presentation-vertical">
+        <div class="expandable-section">
+            <div class="expanded-div">
+                <h1>Jogo QWOP</h1>
+                <button class="toggle-button">+</button>
+            </div>
+
+            <div class="content">
+
+                <p>O jogo QWOP remete à modalidade olímpica de corrida e à implementação do jogo homônimo que ficou
+                    famoso
+                    pela
+                    sua dificuldade em ser usado no browser por jogadores humanos. Neste jogo é necessário controlar os
+                    membros
+                    inferiores de um personagem sujeito a dinâmicas para movimentá-lo em linha reta. A implementação é
+                    uma
+                    adaptação do projeto <a href="https://github.com/alinen/qwop">QWOP (Repositório)</a> da Profa. Aline
+                    Normoyle.</p>
+
+
+                <img src="imgs/QWOP.png" alt="Imagem QWOP">
+
+
+                <div class="legend-img">
+                    <p>Figura 2 - Interface gráfica do jogo QWOP.</p>
+                </div>
+
+
+                <div class="topic-section">
+                    <h2>Os arquivos disponibilizados são:</h2>
+
+                    <ul class="custom-list">
+                        <li><strong>character.py</strong> – implementação ragdoll do personagem a ser movimentado</li>
+                        <li><strong>qwop.py</strong> – implementação do jogo</li>
+                        <li><strong>envqwop.py</strong> – ambiente de simulação do jogo QWOP</li>
+                        <li><strong>bot.py</strong> – exemplo de implementação do agente virtual</li>
+                        <li><strong>qwopPlayGUI.py</strong> – script de execução do jogo QWOP com gráficos</li>
+                        <li><strong>qwopPlayNOGUI.py</strong> – script de execução do jogo QWOP sem gráficos</li>
+                    </ul>
+                </div>
+
+
+                <p>É disponibilizado um exemplo de agente virtual para o jogo QWOP no módulo bot.py. Este agente segue o
+                    paradigma Pensar-Agir-Observar para interação com o ambiente. Nesta implementação é demonstrado o
+                    uso de
+                    ações pré-calculadas para manipulação do agente, todavia, outras soluções são possíveis por
+                    otimização,
+                    aprendizado por reforço, aprendizado supervisionado, etc..</p>
+
+
+                <pre><code class="python">    
+<pre><code class="python">
+import numpy as np
+
+# Example of solution
+#
+# This bot has precalculated limb actions.
+# Each limb movement is performed in opposites, if the left thigh is moved forwards, the right thigh goes backwards.
+# Each movement action is held for a period of time allowing the character to move.
+    
+class Bot:
+    def __init__(self, env):
+        self.env = env
+        self.obs = None
+            
+        # Example solution 1: step and fumble
+        #solution = [2, 1, 2, 2, 2, 1, 1, 2, 2, 2, 0, 3, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 3, 3, 3, 0, 0, 1, 1, 0, 0, 1, 3, 3, 1, 3, 3, 2, 0, 3]
+            
+        # Example solution 2: impulse and run
+        solution = [2, 1, 2, 1, 1, 1, 0, 3, 2, 1, 2, 1, 2, 1, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 0, 2, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 1, 3, 3, 1, 3, 3, 1, 0, 3, 0, 2, 2, 0, 1, 3, 1, 0, 0, 3, 3, 0, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+            
+        MOVEMENT_PERSIST = 6 # holds the limb configuration for this amount of steps
+            
+        # Decode solution into forces
+        n = len(solution)*MOVEMENT_PERSIST             # 60ms for each action
+        x = np.zeros((n, 4))
+            
+        for (i, action) in zip(range(n), solution):
+            match action:
+                case 0:
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 0] = 1
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 1] = -1
+                case 1:
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 0] = -1
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 1] = 1
+                case 2:
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 2] = 1
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 3] = -1
+                case 3:
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 2] = -1
+                    x[i*MOVEMENT_PERSIST:i*MOVEMENT_PERSIST+MOVEMENT_PERSIST, 3] = 1
+                case _:
+                    print('ERROR UNKNOWN ACTION ', action)
+                    exit(0)
+            
+    # store the limb configuration for each step  
+    self.x = x
+            
+    self.step = 0
+            
+    def act(self):
+        if self.step < len(self.x):
+            action = self.x[self.step]
+            self.step += 1
+        else:
+            action = self.env.action_space.sample()
+                
+        return action
+        
+    def observe(self, obs):
+        self.obs = obs
+
+</code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+
+                    Quadro 8 - Exemplo de bot para o jogo QWOP.
+
+                </div>
+
+
+                <p>Os scripts qwopPlayGUI e qwopPlayNOGUI são disponibilizados para que os competidores possam testar
+                    suas
+                    implementações. Não envie estes scripts alterados pois eles não serão utilizados na competição.
+                    Respeite
+                    a
+                    interface de implementação dos bots conforme o construtor, métodos de ação e observação
+                    apresentados. A
+                    sua
+                    implementação do módulo bot.py deve conter o jogador com o nome Bot.</p>
+
+
+                <pre><code class="python">    
+<pre><code class="python">
+    
+import numpy as np
+from envqwop import QWOPEnv
+from bot import Bot
+    
+def runLoop(env):
+    bot = Bot(env)
+        
+    # Simulate for 10 seconds
+    for _ in range(1000):
+        action = bot.act()
+            
+        obs, reward, done, truncated, info = env.step(action)
+            
+        bot.observe(obs)
+            
+        print('REWARD: ', reward)
+    
+def main():
+    env = QWOPEnv(screen=False)
+    runLoop(env)
+    
+if __name__ == "__main__":
+    main()
+</code></pre>
+                </code></pre>
+
+                <div class="legend-img">
+                    Quadro 9 - Script de execução sem gráficos para o jogo QWOP.
+                </div>
+
+
+                <pre><code class="python">    
+    <pre><code class="python">    
+import pyglet
+import numpy as np
+from envqwop import QWOPEnv
+from bot import Bot
+import threading
+import time
+
+def runLoop(env):
+    bot = Bot(env)
+    
+    # Simulate for 10 seconds
+    for _ in range(1000):
+        action = bot.act()
+        
+        obs, reward, done, truncated, info = env.step(action)
+        
+        bot.observe(obs)
+        
+        print('REWARD: ', reward)
+        time.sleep(0.01)
+
+def main():
+    env = QWOPEnv(screen=True)
+    
+    # Create separate thread for logic updates
+    threading.Thread(target=runLoop, args=(env,)).start()
+    
+    # Graphics thread
+    pyglet.app.run()
+
+if __name__ == "__main__":
+    main()
+    
+    
+    </code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+                    Quadro 10 - Script de execução com gráficos para o jogo QWOP.
+                </div>
+
+                <p>O espaço de ações do jogo QWOP é um vetor com 4 valores contínuos na faixa [-1,1], representando as
+                    ativações
+                    máximas de cada membro.</p>
+
+
+
+                <pre><code class="python">    
+    <pre><code class="python">
+# Possible movements are activations for all 4 limbs (thighL, thighR, calfL, calfR)
+self.action_space = Tuple(( Box(-1,1), Box(-1,1), Box(-1,1), Box(-1,1) ))
+    </code></pre>
+                </code></pre>
+
+                <div class="legend-img">
+                    Quadro 11 - Espaço de ações para o jogo QWOP.
+                </div>
+
+
+                <p>O espaço de observações do jogo QWOP contém 10 valores contínuos, representando diferentes
+                    informações do
+                    personagem, sua cabeça, seu torso, e pés. Outras informações podem ser calculadas conforme o trecho
+                    na
+                    Figura 16, disponível no módulo envqwop.py.
+                </p>
+
+                <pre><code class="python">    
+    <pre><code class="python">
+# matches getInputs()
+self.observation_space = Tuple((
+    Box(-np.inf, np.inf),   # 0  character x position
+    Box(-np.inf, np.inf),   # 1  character y position
+    Box(-np.inf, np.inf),   # 2  head x position
+    Box(-np.inf, np.inf),   # 3  head y position
+    Box(-np.inf, np.inf),   # 4  torso x position
+    Box(-np.inf, np.inf),   # 5  torso y position
+    Box(-np.inf, np.inf),   # 6  left foot x position
+    Box(-np.inf, np.inf),   # 7  left foot y position
+    Box(-np.inf, np.inf),   # 8  right foot x position
+    Box(-np.inf, np.inf)    # 9  right foot y position
+))
+    </code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+                    Quadro 12 - Espaço de observações para o jogo QWOP.
+                </div>
+
+                <pre><code class="python">    
+    <pre><code class="python">
+def getInputs(self):
+    inputs = []
+    inputs += [self.game.character.get_position()[0]]
+    inputs += [self.game.character.get_position()[1]]
+    inputs += [self.game.character.head.position[0]]
+    inputs += [self.game.character.head.position[1]]
+    inputs += [self.game.character.torso.position[0]]
+    inputs += [self.game.character.torso.position[1]]
+    inputs += [self.game.character.footL.position[0]]
+    inputs += [self.game.character.footL.position[1]]
+    inputs += [self.game.character.footR.position[0]]
+    inputs += [self.game.character.footR.position[1]]
+
+    return inputs
+    
+    </code></pre>
+                </code></pre>
+
+                <div class="legend-img">
+                    Quadro 13 - Detalhe de implementação do espaço de observação do jogo QWOP.
+                </div>
+
+
+                <pre><code class="python">    
+    <pre><code class="python">
+# It's suggested to scale position by 1.25/200
+self.startPos = self.game.get_character_position()*1.25/200
+        
+### These are not included in the observation space but can be used for your solution
+        
+# Head angle relative to torso in radians
+# headAngle = np.arctan2(game.character.head.position[1]-game.character.torso.position[1], game.character.head.position[0]-game.character.torso.position[0])
+        
+# Positional difference between feet
+#legDeltaX = [game.character.footR.position[0] - game.character.footL.position[0]]
+#legDeltaY = [game.character.footR.position[1] - game.character.footL.position[1]]
+        
+# Distance between head and feet
+#headToRightFoot = np.linalg.norm(game.character.head.position - game.character.footR.position)
+#headToLeftFoot = np.linalg.norm(game.character.head.position - game.character.footL.position)
+        
+# Maximum body length
+#bodyDelta = max(headToRightFoot, headToLeftFoot)
+    
+    </code></pre>
+                </code></pre>
+
+
+                <div class="legend-img">
+                    Quadro 14 - Detalhe de implementação do jogo QWOP com dicas para cálculo de métricas do personagem.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="podium-sec">
+        <h1>Premiação</h1>
+        <div class="container podium">
+            <div class="podium__item">
+                <p class="podium__city">R$: 100,00</p>
+                <div class="podium__rank second">2</div>
+            </div>
+            <div class="podium__item">
+                <p class="podium__city">R$: 150,00</p>
+                <div class="podium__rank first">
+                    <svg class="podium__number" viewBox="0 0 27.476 75.03" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="matrix(1, 0, 0, 1, 214.957736, -43.117417)">
+                            <path class="st8"
+                                d="M -198.928 43.419 C -200.528 47.919 -203.528 51.819 -207.828 55.219 C -210.528 57.319 -213.028 58.819 -215.428 60.019 L -215.428 72.819 C -210.328 70.619 -205.628 67.819 -201.628 64.119 L -201.628 117.219 L -187.528 117.219 L -187.528 43.419 L -198.928 43.419 L -198.928 43.419 Z"
+                                style="fill: #000;" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="podium__item">
+                <p class="podium__city">R$: 50,00</p>
+                <div class="podium__rank third">3</div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logos">
+            <img src="imgs/logo-img.png" alt="Logo PPCI IA" />
+            <img src="imgs/utfpr-logo.png" alt="Logo Footer" />
+            <img src="imgs/svg redondo.svg" alt="Logo PPCI" />
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/UTFPR/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.youtube.com/user/canaldaUTFPR"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/utfpr_/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+
+
+</body>
