@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imgs/logo-img.png" type="image/png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Incluindo uma biblioteca de ícones (Font Awesome para ícones das redes sociais) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -42,7 +48,7 @@
             <li><a href="#presentation-sec">Início</a></li>
             <li><a href="#cronograma-sec">Cronograma</a></li>
             <li class="secoes-ocultas"><a href="#desafio-pong">Desafios</a></li>
-            
+
         </ul>
         <div class="h-icon">
             <a href="#"><i class="fa-solid fa-bars"></i></a>
@@ -56,7 +62,10 @@
             <img src="imgs/Leonardo_Phoenix_A_futuristic_hightech_scene_depicting_the_con_2.jpg" alt="Imagem do Evento">
         </div>
         <div class="presentation-text">
-            <h1>Bem vindo à IAlimpíadas!</h1>
+            <h1>Bem Vindo à IAlimpíadas!</h1>
+
+
+
             <h2>Projeto Programação Competitiva Integrativa Modalidade IA</h2>
 
             <p>Nesta modalidade do Projeto Programação Competitiva Integrativa da UTFPR Campus Toledo, equipes devem
@@ -66,7 +75,10 @@
 
             <h3 style="max-width: 600px;">O evento será realizado de forma remota entre os dias 01 de setembro a 19
                 de
-                outubro de 2024</h3>
+                outubro de 2024, e haverá uma taxa de R$ 10,00.</h3>
+
+
+
             <div class="buttons">
                 <button class="secoes-ocultas"
                     onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScOZp68yQUtDvAfl7lu2DRBMHmrzeHBQgFemOpjVVshfMQfKw/viewform', '_blank');">Inscreva-se</button>
@@ -819,6 +831,27 @@ self.startPos = self.game.get_character_position()*1.25/200
     </section>
 
 
+    <section class="presentation-vertical ">
+        <div class="expandable-section">
+            <div class="expanded-div">
+                <h1>Custo de Inscrição</h1>
+                <button class="toggle-button">+</button>
+            </div>
+
+            <div class="content">
+
+                <p>As inscrições serão realizadas por meio da submissão das soluções durante o período do evento, de 01
+                    a 19
+                    de outubro de 2024, e haverá uma taxa de R$ 10,00. A taxa pode ser paga pelo QR Code abaixo:</p>
+                
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="imgs/qr-code.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="podium-sec">
         <h1>Premiação</h1>
         <div class="container podium">
@@ -856,10 +889,16 @@ self.startPos = self.game.get_character_position()*1.25/200
             <img src="imgs/utfpr-logo.png" alt="Logo Footer" />
             <img src="imgs/svg redondo.svg" alt="Logo PPCI" />
         </div>
+        <h2>Links úteis:</h2>
         <div class="social-icons">
+            
             <a href="https://www.facebook.com/UTFPR/"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.youtube.com/user/canaldaUTFPR"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/utfpr_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ppcitd/?igsh=aXhtbnZlcWptdWc2"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ppci-td@utfpr.edu.br"> <i class="fa-solid fa-envelope"></i></a>
+            <a href="https://chat.whatsapp.com/KqaB3Q2q290E6RaAQBPtcl"><i class="fa-brands fa-whatsapp"></i></a>
+            
+            
         </div>
     </footer>
 

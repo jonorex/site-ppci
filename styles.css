@@ -33,6 +33,10 @@ img {
 }
 
 
+h1 {
+    margin: 10px 0;
+    font-size: 40px;
+}
 
 /* Navbar */
 .navbar {
@@ -181,12 +185,14 @@ img {
     
     justify-content: center;
     align-items: center;
+
+
 }
 
 .presentation-img img {
     max-width: 100%;
-    height: auto;
-    
+    height: 100%;
+    object-fit: cover; /* Faz a imagem "cobrir" a área, recortando o excesso */
 }
 
 .presentation-text {
@@ -634,10 +640,12 @@ footer .logos {
 
 footer .logos img {
     max-width: 300px;
+
 }
 
 .social-icons {
-    padding-top: 50px;
+    
+    padding-top: 0px;
 }
 
 footer .social-icons a {
@@ -656,4 +664,28 @@ footer .social-icons a:nth-child(2):hover {
 
 footer .social-icons a:nth-child(3):hover {
     color: #C13584;
+}
+
+footer .social-icons a:nth-child(5):hover {
+    color: rgb(4, 163, 4);
+}
+
+
+
+
+.custo-inscricao {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.custo-inscricao p {
+    text-align: left;
+}
+
+.custo-inscricao img {
+    max-width: 300px;
 }
